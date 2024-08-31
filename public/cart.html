@@ -65,95 +65,188 @@
         </div>
     </div>
 
-  
-<div class="flex flex-col gap-y-2 px-4 md:flex-row">
+  <!-- desktop navbar -->
+
+  <nav class="bg-white hidden md:block p-2 shadow-lg sticky z-10 top-0 mb-8">
+    <div class="container px-0 mx-auto 2xl:max-w-screen-2xl flex items-center justify-between">
+      <ul class="flex items-center gap-x-2 px-3 text-slate-800 text-base lg:text-lg">
+        <li>
+          <a
+            class="block px-4 py-2 hover:bg-gray-100 transition-all rounded-md duration-500 href="
+            #="#"
+          >LOGO</a>
+        </li>
+
+        <li>
+          <a
+            class="block px-4 py-2 hover:bg-gray-100 transition-all rounded-md duration-500 href="
+            #="#"
+          >خانه</a>
+        </li>
+
+        <li>
+          <a
+            class="block px-4 py-2 hover:bg-gray-100 transition-all rounded-md duration-500 href="
+            #="#"
+          >لپتاپ</a>
+        </li>
+
+        <li>
+          <a
+            class="block px-4 py-2 hover:bg-gray-100 transition-all rounded-md duration-500 href="
+            #="#"
+          >ساعت هوشمند</a>
+        </li>
+
+        <li>
+          <a
+            class="block px-4 py-2 hover:bg-gray-100 transition-all rounded-md duration-500 href="
+            #="#"
+          >تلفن همراه</a>
+        </li>
+      </ul>
+
+      <div class="flex-1 max-w-2xl ml-6">
+        <div class="flex items-center bg-gray-100 rounded-md p-2">
+          <span class="mr-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              ></path>
+            </svg>
+          </span>
+
+          <input
+            class="flex-1 bg-transparent mr-3 w-full p-2 text-slate-800 focus:outline-none"
+            type="text"
+            placeholder="نام محصول مورد نظرتان را وارد کنید."
+          ></input>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- cart content -->
+<div class="flex flex-col container 2xl:max-w-screen-2xl gap-y-2 px-4 md:flex-row">
       <!-- cart items -->
-    <div class="md:w-3/4 flex flex-col gap-y-4 px-4">
+    <div class="md:w-3/5 lg:w-3/4 flex flex-col gap-y-4 px-4">
         <!-- items-1 -->
         <div class="flex justify-between items-center bg-white rounded-lg p-4 gap-x-4 shadow-[0_-4px_8px_0_rgba(0,0,0,0.1)]">
-            <div class="w-20 h-auto">
+            <div class="w-20 md:w-24 h-auto">
                 <img
                     src="/assets/images/apple-watch-7.png"
                     alt=""
                 >
             </div>
             <div class="flex flex-col items-start gap-y-3 flex-1">
-                <span class="text-xs text-slate-800 font-bold">ساعت هوشمند اپل سری 6</span>
+                <span class="text-xs text-slate-800 font-bold md:text-base lg:text-xl">ساعت هوشمند اپل سری 6</span>
                 <span class="text-orange-400">2,250,000 تومان</span>
             </div>
             
             <div class="flex flex-col gap-y-4 justify-start">
-                <span class="flex justify-end text-orange-400">
+                <span class="flex justify-end text-orange-400 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                       </svg>                  
                 </span>
                 <div class="flex items-center justify-between">
-                    <span class="mx-1 bg-gray-400 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center">+</span>
-                    <span class="mx-1 border border-red-500 rounded-sm px-1 py-0.5 pt-2">1</span>
-                    <span class="mx-1 bg-red-100 text-red-500 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center">-</span>
+                    <span class="mx-1 bg-gray-400 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center md:text-base lg:text-xl cursor-pointer">+</span>
+                    <span class="mx-1 border border-red-500 rounded-sm px-1 py-0.5 pt-2 md:text-base lg:text-xl">1</span>
+                    <span class="mx-1 bg-red-100 text-red-500 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center md:text-base lg:text-xl cursor-pointer">-</span>
                 </div>
             </div>
             
         </div>
           <!-- items-2 -->
           <div class="flex justify-between items-center bg-white rounded-lg p-4 gap-x-4 shadow-[0_-4px_8px_0_rgba(0,0,0,0.1)]">
-            <div class="w-20 h-auto">
+            <div class="w-20 md:text-base lg:w-24 h-auto">
                 <img
                     src="/assets/images/apple-watch-7.png"
                     alt=""
                 >
             </div>
             <div class="flex flex-col items-start gap-y-3 flex-1">
-                <span class="text-xs text-slate-800 font-bold">ساعت هوشمند اپل سری 6</span>
+                <span class="text-xs text-slate-800 font-bold md:text-base lg:text-xl">ساعت هوشمند اپل سری 6</span>
                 <span class="text-orange-400">2,250,000 تومان</span>
             </div>
             
             <div class="flex flex-col gap-y-4 justify-start">
-                <span class="flex justify-end text-orange-400">
+                <span class="flex justify-end text-orange-400 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                       </svg>                  
                 </span>
                 <div class="flex items-center justify-between">
-                    <span class="mx-1 bg-gray-400 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center">+</span>
-                    <span class="mx-1 border border-red-500 rounded-sm px-1 py-0.5 pt-2">1</span>
-                    <span class="mx-1 bg-red-100 text-red-500 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center">-</span>
+                    <span class="mx-1 bg-gray-400 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center md:text-base lg:text-xl cursor-pointer">+</span>
+                    <span class="mx-1 border border-red-500 rounded-sm px-1 py-0.5 pt-2 md:text-base lg:text-xl">1</span>
+                    <span class="mx-1 bg-red-100 text-red-500 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center md:text-base lg:text-xl cursor-pointer">-</span>
                 </div>
             </div>
             
         </div>
           <!-- items-3 -->
           <div class="flex justify-between items-center bg-white rounded-lg p-4 gap-x-4 shadow-[0_-4px_8px_0_rgba(0,0,0,0.1)]">
-            <div class="w-20 h-auto">
+            <div class="w-20 md:text-base lg:w-24 h-auto">
                 <img
                     src="/assets/images/apple-watch-7.png"
                     alt=""
                 >
             </div>
             <div class="flex flex-col items-start gap-y-3 flex-1">
-                <span class="text-xs text-slate-800 font-bold">ساعت هوشمند اپل سری 6</span>
+                <span class="text-xs text-slate-800 font-bold md:text-base lg:text-xl">ساعت هوشمند اپل سری 6</span>
                 <span class="text-orange-400">2,250,000 تومان</span>
             </div>
             
             <div class="flex flex-col gap-y-4 justify-start">
-                <span class="flex justify-end text-orange-400">
+                <span class="flex justify-end text-orange-400 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                       </svg>                  
                 </span>
                 <div class="flex items-center justify-between">
-                    <span class="mx-1 bg-gray-400 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center">+</span>
-                    <span class="mx-1 border border-red-500 rounded-sm px-1 py-0.5 pt-2">1</span>
-                    <span class="mx-1 bg-red-100 text-red-500 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center">-</span>
+                    <span class="mx-1 bg-gray-400 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center md:text-base lg:text-xl cursor-pointer">+</span>
+                    <span class="mx-1 border border-red-500 rounded-sm px-1 py-0.5 pt-2 md:text-base lg:text-xl">1</span>
+                    <span class="mx-1 bg-red-100 text-red-500 font-bold rounded-full p-1 pt-2 w-5 h-5 flex items-center justify-center md:text-base lg:text-xl cursor-pointer">-</span>
                 </div>
             </div>
             
         </div>
     </div>
     <!-- cart summary -->
-     <div class="md:w-1/4">
-        ok
+     <div class="hidden md:w-2/5  md:flex flex-col lg:w-1/4">
+        <div class="bg-white rounded-md flex flex-col gap-y-3 mb-4 p-4">
+            <div class="flex justify-between items-center">
+                <span class="text-slate-800 text-xs">مجموع قیمت :</span>
+                <span class="text-orange-400 text-xs">35,450,000 تومان</span>
+            </div>
+            <div class="flex justify-between items-center gap-x-1">
+                <span class=" text-xs font-light text-gray-400">کد تخفیف :</span>
+                <div class="h-8 flex justify-between items-stretch">
+                    <input type="text" class="bg-gray-200 w-full max-w-[150px] h-full rounded-tr-lg text-xs rounded-br-lg text-gray-400" placeholder="AD-CODE">
+                    <button class=" cursor-pointer bg-orange-500 p-1 text-xs text-white h-full">تایید</button>
+                </div>
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-slate-800 text-xs">تخفیف :</span>
+                <span class="text-orange-400 text-xs">450,000 تومان</span>
+            </div>
+            <div class="flex justify-between items-center">
+                <span class="text-slate-800 text-xs"> قیمت نهایی :</span>
+                <span class="text-orange-400 text-xs">35,000,000 تومان</span>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-3">
+            <button class="w-full cursor-pointer bg-orange-500 rounded-sm h-10 text-white font-light text-sm">اضافه به سبد خرید</button>
+            <button class="w-full cursor-pointer border border-orange-500 rounded-sm h-10 text-orange-500 font-light text-sm">انصراف از خرید</button>
+        </div>
      </div>
 </div>
    
